@@ -1,8 +1,6 @@
-#### Frayed CI's Shiny web application
-#
-# Find out more about building applications with Shiny here:
-#    http://shiny.rstudio.com/
-#
+## Frayed CI's Shiny web application
+## Copyright 2022 Alexandra Patzak
+## See file LICENSE for details.
 
 library(shiny)
 library(ggplot2)
@@ -80,7 +78,7 @@ ui <- fluidPage(
     <p>Relative span is the span of a frayed CI divided by the span of a conventional CI.</p>
     <h5><i>What are frayed CI?</i></h5>
     <p>Researchers are urged to report confidence intervals (CI) to qualify estimates of population parameters
-	   and effect sizes observed in studies. Many CIs include two estimates: (a) the focal point estimate, 
+	   and effect sizes observed in studies. Many CIs include two estimates: (a) the focal point estimate,
 	   e.g., a mean, correlation or effect size; and (b) a second point estimate used in estimating the focal
 	   point estimate’s standard error (variability). Logic commending CIs to qualify the focal point estimate
 	   in the first place applies equally to the standard error of the point estimate, but the latter is often
@@ -91,9 +89,11 @@ ui <- fluidPage(
     <p>Winne, P. H., & Patzak, A. (2021). Frayed confidence intervals temper confidence in confidence intervals.
 	   Manuscript submitted for publication.</p>")),
 
-  div(HTML("<hr style='margin-top: 2em;'/><p class='small'>© Alexandra Patzak 2020</p>
+  div(HTML("<hr style='margin-top: 2em;'/><p class='small'>© Alexandra Patzak 2022</p>
     <p class='small'>The content published at https://frayedci.shinyapps.io/frayed_CI/ is licensed under a
-	<a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>."))
+	<a rel='license' href='http://creativecommons.org/licenses/by/4.0/' target='_blank'>Creative Commons Attribution 4.0 International License</a>.</p>
+    <p class='small'>The source code is available at
+	<a href='https://github.com/apatzak/fci_shiny' target='_blank'>https://github.com/apatzak/fci_shiny</a>.</p>"))
 )
 
 
